@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
+    private PlayerInput inputMaster;
+    private CharacterController pController;
     private float moveSpeed;
     public float walkSpeed;
     public float sprintSpeed;
@@ -50,6 +53,21 @@ public class PlayerMovement : MonoBehaviour
         air
     }
 
+    private void Awake()
+    {
+        inputMaster = new PlayerInput();
+    }
+
+    private void OnEnable()
+    {
+        inputMaster.Enable();
+    }
+
+    private void OnDisable()
+    {
+        inputMaster.Disable();
+    }
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -80,6 +98,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void MyInput()
     {
+        /*Vector2 move = inputMaster.Player.Walk.ReadValue<Vector2>();
+        Vector3 schmooving = (move.y * transform.forward) + (move.x * transform.right);
+        
+        pController.Move(schmooving);*/
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
