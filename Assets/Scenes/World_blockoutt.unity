@@ -174,7 +174,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a1a8c8f123b04a14d8bab3d7b464a53d, type: 2}
+  - {fileID: 2100000, guid: a78d33d6f25115d498bee9d87dbaa438, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -474,7 +474,7 @@ PrefabInstance:
     - target: {fileID: -3334479249560807378, guid: 0e1cf9d4c6f1371458ca4265b82e85d2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 149efa870a31af644a8e90b0ec33cf74, type: 2}
+      objectReference: {fileID: 2100000, guid: 3567e0139f4c5d24bbba2a72e20cd4b2, type: 2}
     - target: {fileID: -1666168318575197100, guid: 0e1cf9d4c6f1371458ca4265b82e85d2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -514,11 +514,15 @@ PrefabInstance:
     - target: {fileID: 4078596601902559852, guid: 0e1cf9d4c6f1371458ca4265b82e85d2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: bc8b2d3d05f40fa41b34ab59206ae2d7, type: 2}
+      objectReference: {fileID: 2100000, guid: ba3c577940892a84ba895c4ceab92cb9, type: 2}
     - target: {fileID: 4174808341926871436, guid: 0e1cf9d4c6f1371458ca4265b82e85d2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a5234b53764518342ac4ecf158bc2211, type: 2}
+      objectReference: {fileID: 2100000, guid: d1c430289449d2d4d8664bd09097b86f, type: 2}
+    - target: {fileID: 4926432605927538315, guid: 0e1cf9d4c6f1371458ca4265b82e85d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 63.94
+      objectReference: {fileID: 0}
     - target: {fileID: 5115844702541026058, guid: 0e1cf9d4c6f1371458ca4265b82e85d2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -534,7 +538,7 @@ PrefabInstance:
     - target: {fileID: 5901893356585517859, guid: 0e1cf9d4c6f1371458ca4265b82e85d2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a1a8c8f123b04a14d8bab3d7b464a53d, type: 2}
+      objectReference: {fileID: 2100000, guid: a78d33d6f25115d498bee9d87dbaa438, type: 2}
     - target: {fileID: 7334197015968454905, guid: 0e1cf9d4c6f1371458ca4265b82e85d2, type: 3}
       propertyPath: m_LocalPosition.z
       value: 101.1
