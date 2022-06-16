@@ -7,8 +7,8 @@ using TMPro;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
-    private PlayerInput inputMaster;
-    private CharacterController pController;
+    /*private PlayerInput inputMaster;
+    private CharacterController pController;*/
     private float moveSpeed;
     public float walkSpeed;
     public float sprintSpeed;
@@ -17,22 +17,22 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Keybinds")]
     public KeyCode sprintKey = KeyCode.LeftShift;
-    //public KeyCode crouchKey = KeyCode.LeftControl;
+    public KeyCode crouchKey = KeyCode.LeftControl;
 
     [Header("Ground Check")]
     public float playerHeight;
     public LayerMask whatIsGround;
-    bool grounded;
+    public bool grounded;
 
     public float maxSlopeAngle;
     private RaycastHit slopeHit;
     private bool exitingSlope;
     public float airMultiplier;
 
-    //[Header("Crouching")]
-    //public float crouchSpeed;
-    //public float crouchYScale;
-    //private float startYScale;
+    [Header("Crouching")]
+    public float crouchSpeed;
+    public float crouchYScale;
+    private float startYScale;
 
     public Transform orientation;
 
@@ -49,11 +49,11 @@ public class PlayerMovement : MonoBehaviour
     {
         walking,
         sprinting,
-        //crouching,
+        crouching,
         air
     }
 
-    private void Awake()
+    /*private void Awake()
     {
         inputMaster = new PlayerInput();
     }
@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
     private void OnDisable()
     {
         inputMaster.Disable();
-    }
+    }*/
 
     private void Start()
     {
@@ -74,12 +74,14 @@ public class PlayerMovement : MonoBehaviour
         rb.freezeRotation = true;
 
 
-        //startYScale = transform.localScale.y;
+        startYScale = transform.localScale.y;
     }
 
     private void Update()
     {
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
+
+        Debug.Log("Player is grounded");
 
         MyInput();
         SpeedControl();
@@ -98,33 +100,29 @@ public class PlayerMovement : MonoBehaviour
 
     private void MyInput()
     {
-        /*Vector2 move = inputMaster.Player.Walk.ReadValue<Vector2>();
-        Vector3 schmooving = (move.y * transform.forward) + (move.x * transform.right);
-        
-        pController.Move(schmooving);*/
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
 
-        //if (Input.GetKeyDown(crouchKey))
-        //{
-        //    transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
-        //    rb.AddForce(Vector3.down * 5f, ForceMode.Impulse);
-        //}
+        if (Input.GetKeyDown(crouchKey))
+        {
+            transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
+            rb.AddForce(Vector3.down * 5f, ForceMode.Impulse);
+        }
 
-        //if (Input.GetKeyUp(crouchKey))
-        //{
-        //    transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
-        //}
+        if (Input.GetKeyUp(crouchKey))
+        {
+            transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
+        }
     }
 
     private void StateHandler()
     {
-        //if (Input.GetKey(crouchKey))
-        //{
-        //    state = MovementState.crouching;
-        //    moveSpeed = crouchSpeed;
-        //}
+        if (Input.GetKey(crouchKey))
+        {
+            state = MovementState.crouching;
+            moveSpeed = crouchSpeed;
+        }
 
         if(grounded && Input.GetKey(sprintKey))
         {
@@ -140,7 +138,7 @@ public class PlayerMovement : MonoBehaviour
 
         else
         {
-            state = MovementState.air;
+            state = MovementState.walking;
         }
     }
 
