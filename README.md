@@ -57,7 +57,7 @@ Platform:
 |<img width=500/>|<img width=300/>|
 
    [Backlog]: https://trello.com/b/7ffx5uep/taak-verdeling
-   [Logboek]: https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/logboek.pdf
+   [Logboek]: https://mediacollegeamsterdam.sharepoint.com/:x:/r/teams/C20-F3M8BO-Muse-Team06/Gedeelde%20documenten/Team%2006/Documentatie/werkschema.xlsx?d=w3f48be39725b4e949b2b0539f3551345&csf=1&web=1&e=Js9DVh
    [GameDesignDoc]: https://docs.google.com/presentation/d/1O9KMDa-4TWFDE0RA-_KxzWU7fpTxNwWOcZISSQxnlkQ/edit#slide=id.p
    [RetrospectiveVerslagen]: https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/RetrospectiveVerslagen.pdf
    [ReviewVerslagen]: https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/ReviewVerslagen.pdf
