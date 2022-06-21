@@ -58,7 +58,7 @@ Platform:
 
    [Backlog]: https://trello.com/b/7ffx5uep/taak-verdeling
    [Logboek]: https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/logboek.pdf
-   [GameDesignDoc]: https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/GameDesignDoc.pdf
+   [GameDesignDoc]: https://docs.google.com/presentation/d/1O9KMDa-4TWFDE0RA-_KxzWU7fpTxNwWOcZISSQxnlkQ/edit#slide=id.p
    [RetrospectiveVerslagen]: https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/RetrospectiveVerslagen.pdf
    [ReviewVerslagen]: https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/ReviewVerslagen.pdf
    [Prototype]: https://www.mijnmytheprototype.nl/
