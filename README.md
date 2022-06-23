@@ -2,7 +2,7 @@
 
 ## Collaborators
 
-## [Firal]
+## [Viral]
 Project team:
 ### Devs:
 
