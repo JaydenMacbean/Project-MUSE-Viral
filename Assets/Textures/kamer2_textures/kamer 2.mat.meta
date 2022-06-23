@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Textures/kamer2_textures/kamer 2.mat.meta
 guid: 64f0064313e287c4f8345ca8fbf24768
+=======
+guid: 975eaed1894b6f64cbb0cee5209af614
+>>>>>>> origin/Xavi:Assets/Computertafel/Materials/Muis.mat.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000

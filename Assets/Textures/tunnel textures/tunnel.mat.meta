@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Textures/tunnel textures/tunnel.mat.meta
 guid: 19b5ff3934ece37499520beea6a0fec5
+=======
+guid: 86b233f535638c347ae0b0fbdffb6809
+>>>>>>> origin/Xavi:Assets/Camera/Materials/Camera.mat.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000
