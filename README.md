@@ -34,6 +34,7 @@ Platform:
 | ------ |  ------ |
 | Link naar online product backlog (Trello) | [Backlog]
 | Logboek (pdf)                             | [Logboek]
+| logboekDoc (pdf)                             | [LogboekDoc]
 | Game concept doc (pdf)                    | [GameDesignDoc]
 | Sprint retrospective verslagen (pdf)      | [RetrospectiveVerslagen]
 | Sprint review verslagen (pdf)         | [ReviewVerslagen]
@@ -42,6 +43,7 @@ Platform:
 
    [Backlog]: https://trello.com/b/7ffx5uep/taak-verdeling
    [Logboek]: https://mediacollegeamsterdam.sharepoint.com/:x:/r/teams/C20-F3M8BO-Muse-Team06/Gedeelde%20documenten/Team%2006/Documentatie/werkschema.xlsx?d=w3f48be39725b4e949b2b0539f3551345&csf=1&web=1&e=Js9DVh
+   [LogboekDoc]: https://mediacollegeamsterdam.sharepoint.com/:w:/r/teams/C20-F3M8BO-Muse-Team06/Gedeelde%20documenten/Team%2006/Documentatie/logboek.docx?d=w06149c031e3944b68664b94fd48426aa&csf=1&web=1&e=M6ZoEk
    [GameDesignDoc]: https://docs.google.com/presentation/d/1O9KMDa-4TWFDE0RA-_KxzWU7fpTxNwWOcZISSQxnlkQ/edit#slide=id.p
    [RetrospectiveVerslagen]: https://mediacollegeamsterdam.sharepoint.com/:w:/r/teams/C20-F3M8BO-Muse-Team06/Gedeelde%20documenten/Team%2006/Documentatie/Sprint%20review%20feedback.docx?d=w3ec98341cb7f499f8db7c91ff784ef4f&csf=1&web=1&e=dohAdV
    [ReviewVerslagen]: https://mediacollegeamsterdam.sharepoint.com/:w:/r/teams/C20-F3M8BO-Muse-Team06/Gedeelde%20documenten/Team%2006/Documentatie/Sprint%20review%20feedback.docx?d=w3ec98341cb7f499f8db7c91ff784ef4f&csf=1&web=1&e=dohAdV
